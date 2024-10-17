@@ -8,6 +8,7 @@ controller:
       service.beta.kubernetes.io/aws-load-balancer-type: external
       service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
       service.beta.kubernetes.io/aws-load-balancer-nlb-target-type: ip
+      service.beta.kubernetes.io/aws-load-balancer-subnets: subnet-2102306b,subnet-69412e35,subnet-f25ee8cc,subnet-c80723c7,subnet-d55c35fb,subnet-a07210c7
     loadBalancerClass: service.k8s.aws/nlb
     targetPorts:
       https: 'https'

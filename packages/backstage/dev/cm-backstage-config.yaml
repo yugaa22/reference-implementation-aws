@@ -108,6 +108,10 @@ data:
         # Examples from a public GitHub repository.
         - type: url
           target: https://github.com/awslabs/backstage-templates-on-eks/blob/main/catalog-info.yaml
+        - type: url
+          target: https://github.com/opsmx-cnoe/backstage/blob/rackspace/opsmx-inc.yaml
+          rules:
+            - allow: [Component, Resource]
         ## Uncomment these lines to add an example org
         # - type: url
         #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/acme-corp.yaml

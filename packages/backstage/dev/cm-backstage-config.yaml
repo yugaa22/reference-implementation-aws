@@ -99,6 +99,18 @@ data:
       # see https://backstage.io/docs/features/software-templates/configuration for software template options
 
     catalog:
+      providers:
+        kubernetes:
+          local-cluster:
+            cluster: local
+            processor:
+              namespaceOverride: default
+              defaultOwner: user1
+            schedule:
+              frequency:
+                seconds: 120
+              timeout:
+                seconds: 5
       import:
         entityFilename: catalog-info.yaml
         pullRequestBranchName: backstage-integration

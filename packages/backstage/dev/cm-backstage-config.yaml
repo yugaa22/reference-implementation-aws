@@ -109,7 +109,7 @@ data:
         - type: url
           target: https://github.com/awslabs/backstage-templates-on-eks/blob/main/catalog-info.yaml
         - type: url
-          target: https://github.com/opsmx-cnoe/backstage/blob/rackspace/opsmx-inc.yaml
+          target: https://github.com/opsmx-cnoe/backstage/blob/cnoe/opsmx-inc.yaml
           rules:
             - allow: [Component, Resource]
         ## Uncomment these lines to add an example org

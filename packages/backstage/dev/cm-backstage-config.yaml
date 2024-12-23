@@ -70,6 +70,12 @@ data:
         headers:
           Cookie:
             $env: ARGOCD_AUTH_TOKEN
+      argocd:
+        appLocatorMethods:
+          - type: config
+            instances:
+              - name: default
+                url: ${ARGO_CD_URL}
 
     # Reference documentation http://backstage.io/docs/features/techdocs/configuration
     # Note: After experimenting with basic setup, use CI/CD to generate docs
@@ -92,7 +98,8 @@ data:
             metadataUrl: ${KEYCLOAK_NAME_METADATA}
             clientId: backstage
             clientSecret: ${KEYCLOAK_CLIENT_SECRET}
-            scope: 'openid profile email groups'
+            #scope: 'openid profile email groups'
+            additionalScopes: 'openid profile email groups'
             prompt: auto
 
     scaffolder:
